@@ -1,0 +1,9 @@
+{
+  "name": "cgm-remote-monitor",
+  "builds": [
+    { "src": "*.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/lib/server/server.js" }
+  ]
+}
